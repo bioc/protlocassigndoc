@@ -1,0 +1,48 @@
+Package: protlocassigndoc
+Title: Documentation for protlocassign package for constrained proportional assignment
+Version: 0.8.0
+Date: 2022-03-12
+Authors@R: 
+    person(given = "Peter",
+           family = "Lobel", 
+           role = c("aut"),
+           email = "lobel@cabm.rutgers.edu")
+    person(given = "Dirk",
+           family = "Moore",
+           role = c("cre","aut"),
+           email = "dirkfmoore@gmail.com")
+Description: This package constains documentation in the form of tutorials
+   (in vignette format) for the protlocassign package. 
+   This package fits a constrained proportional assignment (cpa)
+   model to mass spectrometry data 
+    to proportionally assign proteins to subcellular locations.
+    The package itself is here:
+    http://github.com/mooredf22/protlocassign
+License: GPL-3
+Encoding: UTF-8
+LazyData: false
+Depends: 
+    R (>= 4.1.0),
+    lme4
+RoxygenNote: 7.1.2
+Imports:
+    protlocassign,
+    BB,
+    pracma,
+    outliers,
+    knitr,
+    stats,
+    graphics,
+    viridisLite,
+    viridis,
+    plot.matrix,
+    grid,
+    gridExtra,
+    rmarkdown,
+    utils,
+    methods,
+    BiocParallel
+biocViews: Proteomics, MassSpectrometry
+VignetteBuilder: knitr
+URL: http//github.com/mooredf22/protlocassigndoc
+
