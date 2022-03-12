@@ -1,8 +1,11 @@
-# protlocassigndoc: Documentation for protlocassign, a method for 
-proportionally assigning protein residence among subcellular organelles
+# protlocassigndoc: Documentation for protlocassign, a method for proportionally assigning protein residence among subcellular organelles
 
 ## Introduction
-This package implements constrained proportional assignment to assign proteins proportionately to their subcellular organelle residences. It uses quantitative mass spectrometry data from subcellular fractionation experiments to create profiles describing the distribution of proteins and peptides across centrifugation fractions. The package identifies outlier spectra and computes weighted means across peptides using random effects models. Then, using reference proteins that reside in single compartments, it estimates the distribution of each protein across these compartments by obtaining optimal mixtures of the reference profiles. 
+This package contains supplementary tutorials that describe in detail the protlocassign package. The protlocassign package is on github:
+
+github.com/mooredf22/protlocassign
+
+The protlocassign package implements constrained proportional assignment to assign proteins proportionately to their subcellular organelle residences. It uses quantitative mass spectrometry data from subcellular fractionation experiments to create profiles describing the distribution of proteins and peptides across centrifugation fractions. The package identifies outlier spectra and computes weighted means across peptides using random effects models. Then, using reference proteins that reside in single compartments, it estimates the distribution of each protein across these compartments by obtaining optimal mixtures of the reference profiles. 
 
 ## Installation
 Start by installing the devtools package from CRAN, by typing
@@ -15,7 +18,9 @@ Then install the protlocassign package by typing
 
 ```
 devtools::install_github("mooredf22/protlocassign")
+devtools::install_github("mooredf22/protlocassigndoc")
 library(protlocassign)
+library(protlocassigndoc)
 ```
 
 This will make the programs and datasets available. Instructions for use of the package are in the vignette.
