@@ -1,6 +1,6 @@
 Package: protlocassigndoc
 Title: Documentation for protlocassign package for constrained proportional assignment
-Version: 0.9.0
+Version: 0.99.0
 Date: 2022-04-27
 Authors@R: 
     person(given = "Peter",
