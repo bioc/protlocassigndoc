@@ -11,6 +11,7 @@ Authors@R:
            family = "Moore",
            role = c("cre","aut"),
            email = "dirkfmoore@gmail.com")
+BiocType: Workflow
 Description: This package constains documentation in the form of tutorials
    (in vignette format) for the protlocassign package. 
    This package fits a constrained proportional assignment (cpa)
@@ -42,7 +43,7 @@ Imports:
     utils,
     methods,
     BiocParallel
-biocViews: Proteomics, MassSpectrometry
+biocViews: protlocassignWorkflow
 VignetteBuilder: knitr
 URL: http//github.com/mooredf22/protlocassigndoc
 
