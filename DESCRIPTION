@@ -24,26 +24,9 @@ Encoding: UTF-8
 LazyData: false
 Depends: 
     R (>= 4.1.0),
-    lme4
+    lme4,
+    knitr
 RoxygenNote: 7.1.2
-Imports:
-    protlocassign,
-    BB,
-    pracma,
-    outliers,
-    knitr,
-    stats,
-    graphics,
-    viridisLite,
-    viridis,
-    plot.matrix,
-    grid,
-    gridExtra,
-    rmarkdown,
-    utils,
-    methods,
-    BiocParallel
-biocViews: protlocassignWorkflow
+biocViews: Proteomics, MassSpectrometry
 VignetteBuilder: knitr
 URL: http//github.com/mooredf22/protlocassigndoc
-

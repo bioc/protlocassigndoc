@@ -1,16 +1,16 @@
 ---
-title: "protlocassign tutorials"
-author: "DFM & PL"
+title: 'A guide for using protlocassign for constrained proportional assignment'
+author:
+- name: Dirk F Moore
+  affiliation: 
+  - Department of Biostatistics and Epidemiology, Rutgers School of Public Health, NJ, US
+- name: Peter Lobel
+  affiliation: Center for Advanced Biotechnology and Medicine, Rutgers University, NJ, US
 date: "`r Sys.Date()`"
-output:
-  word_document:
-    toc: yes
-  html_document:
-    toc: yes
-    df_print: paged
+output: BiocStyle::html_document
 vignette: |
-  %\VignetteIndexEntry{protlocassign tutorials}
-  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{A guide for using protlocassign for constrained proportional assignment} 
+  %\VignetteEngine{knitr::rmarkdown}\n"
 ---
 
 ```{r setup, include = FALSE}
@@ -29,12 +29,19 @@ knitr::opts_chunk$set(
   eval = TRUE
 )
 ```
+**R version**: `r R.version.string`
+
+**Bioconductor version**: `r BiocManager::version()`
+
+**Package**: `r packageVersion("protlocassign")`
 
 \newpage
 
 # Tutorial 1: Getting started with the assignment of proteins to subcellular locations using protlocassign 
 
 ## Introduction
+
+This set of tutorials provides a comprehensive guide to the `protlocassign` package for constrained proportional assignment. It is available in the package "protlocassigndoc"; details on installing that are given in the next section. Additional details may be found in a companion paper (DF Moore, D Sleat, and P Lobel, 2022).
 
 Determining the locations of proteins in the cell is an important but complex problem. A frequently employed approach for this involves centrifugation-based methods to partially separate different organelles and other cellular compartments and then to determine the relative distribution of different proteins among the centrifugation fractions. The location of proteins of interest in the cellular compartments are then inferred by comparing their distributions across the centrifugation fractions to the distributions of a set of reference proteins (markers) with known cellular locations.
 
@@ -60,6 +67,12 @@ install.packages("devtools")
 devtools::install_github("mooredf22/protlocassign")
 ```
 
+This companion of supplementary tutorials may be installed as follows:
+
+```
+devtools::install_github("mooredf22/protlocassigndoc")
+```
+
 Finally, install other required packages:
 
 ```
@@ -67,6 +80,52 @@ BiocManager::install(c("BB", "pracma", "lme4", "outliers", "BiocParallel"))
 ```
 
 Once you have installed these packages, you do not need to re-install them the next time you start up R. However, you will need to load them using the `library` function before use.
+
+```{r, echo=FALSE, results="hide", warning=FALSE}
+suppressPackageStartupMessages({
+    library(protlocassign)
+    library(BB)
+    library(pracma)
+    library(outliers)
+    library(stats)
+    library(graphics)
+    library(viridisLite)
+    library(viridis)
+    library(plot.matrix)
+    library(grid)
+    library(gridExtra)
+    library(rmarkdown)
+    library(utils)
+    library(methods)
+    library(BiocParallel)
+})
+```
+
+First load the `protlocassign` library:
+
+```{r}
+library(protlocassign)
+```
+
+and then other needed libraries:
+
+```{r}
+    library(BB)
+    library(pracma)
+    library(outliers)
+    library(stats)
+    library(graphics)
+    library(viridisLite)
+    library(viridis)
+    library(plot.matrix)
+    library(grid)
+    library(gridExtra)
+    library(rmarkdown)
+    library(utils)
+    library(methods)
+    library(BiocParallel)
+```
+
 
 ## Working with data expressed as normalized specific amounts (NSA)
 
