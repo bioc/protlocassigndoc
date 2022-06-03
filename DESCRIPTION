@@ -26,7 +26,8 @@ Depends:
     R (>= 4.1.0),
     lme4,
     knitr,
-    protlocassign
+    protlocassign,
+    BiocStyle
 RoxygenNote: 7.1.2
 biocViews: Proteomics, MassSpectrometry
 VignetteBuilder: knitr
