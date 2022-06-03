@@ -31,4 +31,5 @@ Jadot, M.; Boonen, M.; Thirion, J.; Wang, N.; Xing, J.; Zhao, C.; Tannous, A.; Q
 
 Tannous, A.; Boonen, M.; Zheng, H.; Zhao, C.; Germain, C. J.; Moore, D. F.; Sleat, D. E.; Jadot, M.; Lobel, P., Comparative Analysis of Quantitative Mass Spectrometric Methods for Subcellular Proteomics. J Proteome Res 2020, 19, (4), 1718-1730.
 
+Moore DF, Sleat D, Lobel P. A method to estimate the distribution of proteins across multiple compartments using data from quantitative proteomics subcellular fractionation experiments. Journal of Proteome Research, 2022, 21, 6, 1371-1381 https://doi.org/10.1021/acs.jproteome.1c00781
 
